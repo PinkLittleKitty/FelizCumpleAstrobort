@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feliz Cumpleaños</title>
+    <meta charset="UTF-8">
+    <style>
+        .background {
+            background-image: url('Imagenes/nnbj.png');
+            background-size: cover;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .users {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .user {
+            text-align: center;
+        }
+
+        .user img {
+            border: 1px solid #ccc;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .fullscreen img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .jumping-images {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            animation: jump 2s infinite;
+        }
+
+        .jumping-images img {
+            width: 50px;
+            height: 50px;
+        }
+
+        @keyframes jump {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-50px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <h1><img src="Imagenes/360_F_568093836_1JFTq5IoByinAn4Qtj4RTHQfxvGgRYEn.jpg" alt="Feli pumple"></h1>
+        <div class="users">
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+        </div>
+    </div>
+
+    <div class="fullscreen" id="fullscreenContainer" style="display: none;">
+        <img id="fullscreenImage" src="" alt="Fullscreen Image">
+    </div>
+
+    <div class="jumping-images">
+        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
+        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
+        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
+        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
+        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
+    </div>
+
+    <script>
+        function openFullscreen(img) {
+            const fullscreenContainer = document.getElementById('fullscreenContainer');
+            const fullscreenImage = document.getElementById('fullscreenImage');
+
+            fullscreenImage.src = img.src;
+            fullscreenContainer.style.display = 'flex';
+        }
+
+        document.addEventListener('click', function (event) {
+            const fullscreenContainer = document.getElementById('fullscreenContainer');
+            if (event.target === fullscreenContainer) {
+                fullscreenContainer.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
