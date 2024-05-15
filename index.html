@@ -16,7 +16,10 @@
         .users {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            padding: 0 150px;
         }
 
         .user {
@@ -25,9 +28,9 @@
 
         .user img {
             border: 1px solid #ccc;
-            width: 100%;
-            height: auto;
-            object-fit: contain;
+            width: 175px;
+            height: 175px;
+            object-fit: cover;
             cursor: pointer;
         }
 
@@ -88,6 +91,21 @@
     <div class="background">
         <h1><img src="Imagenes/360_F_568093836_1JFTq5IoByinAn4Qtj4RTHQfxvGgRYEn.jpg" alt="Feli pumple"></h1>
         <div class="users">
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
+            <div class="user">
+                User
+                <br>
+                <img src="Imagenes/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+            </div>
             <div class="user">
                 User
                 <br>
