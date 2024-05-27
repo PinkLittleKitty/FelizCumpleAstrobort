@@ -5,6 +5,9 @@
     <title>Feliz Cumpleaños</title>
     <meta charset="UTF-8">
     <style>
+        html, body {
+            overflow-x: hidden;
+        }
         .background {
             background-image: url('Imagenes/fondo.png');
             background-size: cover;
@@ -65,18 +68,23 @@
 
         .jumping-images {
             position: absolute;
-            bottom: -650%;
-            left: 0;
-            width: 100%;
+            bottom: -550%;
+            left: 10%;
+            transform: translateX(-50%);
+            width: 80%;
             display: flex;
-            justify-content: space-around;
             animation: jump 2s infinite;
             transition: position 0.5s ease;
+        }
+
+        .jumping-images img:nth-child(n+9) {
+            transform: scaleX(-1);
         }
 
         .jumping-images img {
             width: 50px;
             height: 50px;
+            margin: 0 10px;
         }
 
         .logo-container {
@@ -141,6 +149,37 @@
             position: fixed;
             bottom: 0;
             top: auto;
+        }
+
+        .balloon {
+            position: absolute;
+            z-index: 1;
+            animation: jump 2s linear infinite;
+            top: 50vh;
+        }
+
+        .balloon img {
+            width: 25%;
+        }
+        
+        .balloon-top-left {
+            left: 5%;
+            top: 10%;
+        }
+
+        .balloon-top-right {
+            right: -20%;
+            top: 10%;
+        }
+
+        .balloon-bottom-left {
+            left: 10%;
+            bottom: 10%;
+        }
+
+        .balloon-bottom-right {
+            right: -15%;
+            bottom: 10%;
         }
     </style>
 </head>
@@ -322,6 +361,19 @@
             </div>
         </div>
     </div>
+    
+    <div class="balloon balloon-left balloon-top-left">
+        <img src="Imagenes/Globos/C1.png" alt="Balloon">
+    </div>
+    <div class="balloon balloon-right balloon-top-right">
+        <img src="Imagenes/Globos/M3.png" alt="Balloon">
+    </div>
+    <div class="balloon balloon-left balloon-bottom-left">
+        <img src="Imagenes/Globos/Y2.png" alt="Balloon">
+    </div>
+    <div class="balloon balloon-right balloon-bottom-right">
+        <img src="Imagenes/Globos/C2.png" alt="Balloon">
+    </div>
 
     <div class="fullscreen" id="fullscreenContainer" style="display: none;">
         <img id="fullscreenImage" src="" alt="Fullscreen Image">
@@ -331,7 +383,7 @@
         <div class="credits-content">
             <p>Este regalo fue organizado por:</p>
             <p><a href="https://x.com/Cori_CatAstro" target="_blank">★Coralcita</a></p>
-            <p>★Mikaela_cow</p>
+            <p><a href="https://www.instagram.com/ohwhoismikaa?igsh=MTVhazl6bGRlcDloMA==" target="_blank"></a>★Mikaela_cow</a></p>
             <p></p>
             <p>Programador:</p>
             <p><a href="https://neki.is-a.dev" target="_blank">★JustNeki</a></p>
@@ -347,11 +399,22 @@
     </div>
 
     <div class="jumping-images">
-        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
-        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
-        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
-        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
-        <img src="Imagenes/comision santirez.jpg" alt="Jumping Image">
+        <img src="Imagenes/peepos/1.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/8.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/MAGGIE.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/3.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/MARGE.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/2.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/6.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/LISA.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/4.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/BART.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/11.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/HOMERO.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/7.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/5.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/9.png" alt="Jumping Image">
+        <img src="Imagenes/peepos/10.png" alt="Jumping Image">
     </div>
 
     <script>
@@ -376,7 +439,6 @@
         }
 
         window.addEventListener('scroll', function () {
-            const jumpingImages = document.querySelector('.jumping-images');
             const background = document.querySelector('.background');
             const backgroundHeight = background.offsetHeight;
             const scrollHeight = window.pageYOffset;
