@@ -11,6 +11,7 @@
             position: relative;
             overflow-x: hidden;
         }
+
         .background {
             background-image: url('Imagenes/fondo.png');
             background-size: cover;
@@ -18,9 +19,37 @@
             margin: 0;
             padding: 0;
             background-repeat: no-repeat;
-            z-index: -1;
+            z-index: -10;
         }
 
+        .clouds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500vh;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .clouds video {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .clouds video:nth-child(2) {
+            top: 30%;
+        }
+
+        .clouds video:nth-child(3) {
+            top: 70%;
+        }
+
+        
         .users {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -152,6 +181,7 @@
             z-index: 1;
             animation: jump 2s linear infinite;
             top: 50vh;
+            pointer-events: none
         }
 
         .balloon img {
@@ -192,8 +222,20 @@
                 <img src="Imagenes/nube-creditos.png" alt="Creditos" onclick="showCredits()">
             </div>
             <h1><img src="Imagenes/FELIZ-CUMPLE-LOGO.png" alt="Feli pumple"></h1>
-        </div>        
+        </div>
         
+        <div class="clouds">
+            <video autoplay loop muted>
+                <source src="Imagenes/Nube1.webm" type="video/webm">
+            </video>
+            <video autoplay loop muted>
+                <source src="Imagenes/Nube2.webm" type="video/webm">
+            </video>
+            <video autoplay loop muted>
+                <source src="Imagenes/Nube3.webm" type="video/webm">
+            </video>
+        </div>
+
         <div class="wrapper">
             <div class="users">
                 <div class="user">
