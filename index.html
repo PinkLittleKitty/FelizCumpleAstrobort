@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <style>
         html, body {
+            position: relative;
             overflow-x: hidden;
         }
         .background {
@@ -66,27 +67,6 @@
             max-height: 90%;
         }
 
-        .jumping-images {
-            position: absolute;
-            bottom: -550%;
-            left: 10%;
-            transform: translateX(-50%);
-            width: 80%;
-            display: flex;
-            animation: jump 2s infinite;
-            transition: position 0.5s ease;
-        }
-
-        .jumping-images img:nth-child(n+9) {
-            transform: scaleX(-1);
-        }
-
-        .jumping-images img {
-            width: 50px;
-            height: 50px;
-            margin: 0 10px;
-        }
-
         .logo-container {
             position: relative;
             text-align: center;
@@ -130,6 +110,18 @@
             overflow-y: auto;
         }
 
+        .repeating-webm {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .repeating-webm video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
 
         @keyframes jump {
             0% {
@@ -181,6 +173,11 @@
             right: -15%;
             bottom: 10%;
         }
+
+        .wrapper {
+            position: relative;
+            padding-bottom: 1000px;
+        }
     </style>
 </head>
 
@@ -193,172 +190,179 @@
             <h1><img src="Imagenes/FELIZ-CUMPLE-LOGO.png" alt="Feli pumple"></h1>
         </div>        
         
-        <div class="users">
-            <div class="user">
-                <img src="Imagenes/Nombres/Coralcita.png">
-                <br>
-                <img src="Imagenes/Cartas/Coralcita.jpg" alt="User Image" onclick="openFullscreen(this)">
+        <div class="wrapper">
+            <div class="users">
+                <div class="user">
+                    <img src="Imagenes/Nombres/Coralcita.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Coralcita.jpg" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Mika.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Mika.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Igochi.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Igochi.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Vicu-Aaroncio.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Vicu-Aaroncio.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Leggiex.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Leggiex.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/birdhouzin.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Birdhouzin.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/cabifax.png">
+                    <br>
+                    <img src="Imagenes/Cartas/cabifax.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/cuakerlo.png">
+                    <br>
+                    <img src="Imagenes/Cartas/cuakerlo.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/humita_00.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Humitaconh.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/MrQueen__.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Mrqueen.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/kwn_so.png">
+                    <br>
+                    <img src="Imagenes/Cartas/kwnso.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/gusano73.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Gusano.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/LucaDucks.png">
+                    <br>
+                    <img src="Imagenes/Cartas/LucaPatos.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/niconumeritos.png">
+                    <br>
+                    <img src="Imagenes/Cartas/NicoNumeritos.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/odasaku_u.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Odasakuu.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/louciell.png">
+                    <br>
+                    <img src="Imagenes/Cartas/LOUAlgo.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/MrShocc.png">
+                    <br>
+                    <img src="Imagenes/Cartas/MrShocc.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/merfasoo.png">
+                    <br>
+                    <img src="Imagenes/Cartas/merfasso.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/milkomchan.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Milkochancho.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Evilpolloidevuk.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Pollomalo.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Deivid420.png">
+                    <br>
+                    <img src="Imagenes/Cartas/deigamer.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/aylu7976.png">
+                    <br>
+                    <img src="Imagenes/Cartas/aylu.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Perchitagamer.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Percha.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Gomikiio.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Gomitas.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Nogue_void.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Nogue.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Trashuvv.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Basurauvv.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Paolaxo14.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Paolaxo.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Vicu-Aaroncio.png">
+                    <br>
+                    <img src="Imagenes/Cartas/Vicu-Aaroncio2.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Tozznier.png">
+                    <br>
+                    <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/Morius.png">
+                    <br>
+                    <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/hika_s2.png">
+                    <br>
+                    <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/pungamaster5.png">
+                    <br>
+                    <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
+                <div class="user">
+                    <img src="Imagenes/Nombres/ts_frantwo.png">
+                    <br>
+                    <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
+                </div>
             </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Mika.png">
-                <br>
-                <img src="Imagenes/Cartas/Mika.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Igochi.png">
-                <br>
-                <img src="Imagenes/Cartas/Igochi.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Vicu-Aaroncio.png">
-                <br>
-                <img src="Imagenes/Cartas/Vicu-Aaroncio.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Leggiex.png">
-                <br>
-                <img src="Imagenes/Cartas/Leggiex.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/birdhouzin.png">
-                <br>
-                <img src="Imagenes/Cartas/Birdhouzin.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/cabifax.png">
-                <br>
-                <img src="Imagenes/Cartas/cabifax.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/cuakerlo.png">
-                <br>
-                <img src="Imagenes/Cartas/cuakerlo.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/humita_00.png">
-                <br>
-                <img src="Imagenes/Cartas/Humitaconh.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/MrQueen__.png">
-                <br>
-                <img src="Imagenes/Cartas/Mrqueen.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/kwn_so.png">
-                <br>
-                <img src="Imagenes/Cartas/kwnso.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/gusano73.png">
-                <br>
-                <img src="Imagenes/Cartas/Gusano.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/LucaDucks.png">
-                <br>
-                <img src="Imagenes/Cartas/LucaPatos.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/niconumeritos.png">
-                <br>
-                <img src="Imagenes/Cartas/NicoNumeritos.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/odasaku_u.png">
-                <br>
-                <img src="Imagenes/Cartas/Odasakuu.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/louciell.png">
-                <br>
-                <img src="Imagenes/Cartas/LOUAlgo.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/MrShocc.png">
-                <br>
-                <img src="Imagenes/Cartas/MrShocc.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/merfasoo.png">
-                <br>
-                <img src="Imagenes/Cartas/merfasso.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/milkomchan.png">
-                <br>
-                <img src="Imagenes/Cartas/Milkochancho.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Evilpolloidevuk.png">
-                <br>
-                <img src="Imagenes/Cartas/Pollomalo.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Deivid420.png">
-                <br>
-                <img src="Imagenes/Cartas/deigamer.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/aylu7976.png">
-                <br>
-                <img src="Imagenes/Cartas/aylu.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Perchitagamer.png">
-                <br>
-                <img src="Imagenes/Cartas/Percha.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Gomikiio.png">
-                <br>
-                <img src="Imagenes/Cartas/Gomitas.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Nogue_void.png">
-                <br>
-                <img src="Imagenes/Cartas/Nogue.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Trashuvv.png">
-                <br>
-                <img src="Imagenes/Cartas/Basurauvv.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Paolaxo14.png">
-                <br>
-                <img src="Imagenes/Cartas/Paolaxo.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Vicu-Aaroncio.png">
-                <br>
-                <img src="Imagenes/Cartas/Vicu-Aaroncio2.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Tozznier.png">
-                <br>
-                <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/Morius.png">
-                <br>
-                <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/hika_s2.png">
-                <br>
-                <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/pungamaster5.png">
-                <br>
-                <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
-            <div class="user">
-                <img src="Imagenes/Nombres/ts_frantwo.png">
-                <br>
-                <img src="Imagenes/Cartas/PlaceHolder.png" alt="User Image" onclick="openFullscreen(this)">
-            </div>
+        </div>
+        <div class="repeating-webm">
+            <video autoplay loop muted>
+                <source src="Imagenes/Comp 1.webm" type="video/webm">
+            </video>
         </div>
     </div>
     
@@ -398,25 +402,6 @@
         </div>
     </div>
 
-    <div class="jumping-images">
-        <img src="Imagenes/peepos/1.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/8.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/MAGGIE.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/3.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/MARGE.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/2.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/6.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/LISA.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/4.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/BART.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/11.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/HOMERO.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/7.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/5.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/9.png" alt="Jumping Image">
-        <img src="Imagenes/peepos/10.png" alt="Jumping Image">
-    </div>
-
     <script>
         function openFullscreen(img) {
             const fullscreenContainer = document.getElementById('fullscreenContainer');
@@ -442,15 +427,9 @@
             const background = document.querySelector('.background');
             const backgroundHeight = background.offsetHeight;
             const scrollHeight = window.pageYOffset;
-
-            if (scrollHeight > backgroundHeight / 2)
-            {
-                jumpingImages.classList.add('visible');
-            } else {
-                jumpingImages.classList.remove('visible');
-            }
         });
     </script>
+
 </body>
 
 </html>
